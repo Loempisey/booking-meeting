@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-ebooking-dev-100112-authRole",
+      "UnauthRoleArn": "arn:aws:iam::226729303832:role/amplify-ebooking-dev-100112-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::226729303832:role/amplify-ebooking-dev-100112-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-ebooking-dev-100112-deployment",
+      "UnauthRoleName": "amplify-ebooking-dev-100112-unauthRole",
+      "StackName": "amplify-ebooking-dev-100112",
+      "StackId": "arn:aws:cloudformation:us-east-1:226729303832:stack/amplify-ebooking-dev-100112/c628e580-e95e-11ed-bcbb-0e61235385e5",
+      "AmplifyAppId": "d1yr305gptfvlw"
+    },
+    "categories": {
+      "auth": {
+        "ebookingca37bec9": {}
+      }
+    }
+  }
+}
