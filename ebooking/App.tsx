@@ -1,12 +1,14 @@
+import {Text} from '@rneui/base';
 import React from 'react';
 import {View} from 'react-native';
-import SignUp from './src/screens/SignUp';
+// import SignUp from './src/screens/SignUp';
 
 const App = () => {
   return (
     <>
       <View>
-        <SignUp navigation={undefined} />
+        <Text>hello</Text>
+        {/* <SignUp navigation={undefined} /> */}
       </View>
     </>
   );
