@@ -4,34 +4,48 @@ import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 interface ButtonProps {
   title: string;
   onpress: () => void;
+  bgColor?: string;
+  fgColor?: string;
 }
 
-const AppButton: React.FC<ButtonProps> = ({title, onpress}) => {
+const CustomButton: React.FC<ButtonProps> = ({
+  title,
+  onpress,
+  bgColor,
+  fgColor,
+}) => {
   return (
-    <View>
-      <TouchableOpacity style={styles.button} onPress={onpress}>
-        <Text style={styles.buttonText}>{title}</Text>
+    <View style={styles.constainer}>
+      <TouchableOpacity
+        style={[styles.button, bgColor ? {backgroundColor: bgColor} : {}]}
+        onPress={onpress}>
+        <Text style={[styles.buttonText, fgColor ? {color: fgColor} : {}]}>
+          {title}
+        </Text>
       </TouchableOpacity>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
+  constainer: {
+    alignItems: 'center',
+  },
   button: {
-    marginVertical: 10,
-    borderRadius: 25,
+    marginVertical: 5,
+    borderRadius: 5,
     justifyContent: 'center',
     alignItems: 'center',
     padding: 15,
     width: '80%',
-    backgroundColor: 'tomato',
+    backgroundColor: '#3B71F3',
   },
   buttonText: {
     color: 'white',
-    fontSize: 18,
+    fontSize: 14,
     fontWeight: '600',
     textTransform: 'uppercase',
   },
 });
 
-export default AppButton;
+export default CustomButton;
